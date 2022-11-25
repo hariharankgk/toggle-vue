@@ -16,7 +16,8 @@
   const emits = defineEmits<{(e: typeof changeEmitName, id: string): void }>();
   const onInput = (event: Event) => {
     const target = event.target as HTMLInputElement;
-    emits(changeEmitName, target.checked);
+    const checked = target.checked ? 'toggled-on' : 'toggled-off';
+    emits(changeEmitName, checked);
   };
 </script>
 

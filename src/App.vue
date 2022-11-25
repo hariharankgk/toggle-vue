@@ -8,7 +8,7 @@
 
 <script setup lang="ts">
   import ToggleSwitch from './components/ToggleSwitch.vue'
-  function getValue(val) {
+  function getValue(val='') {
     console.log(val)
   }
 </script>
